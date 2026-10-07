@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("pt141-theme");if(_t==="light"||_t==="dark")docu
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#fb7185; --sky-deep:#be123c;
-  --teal:#fb7185; --teal-deep:#500724;
-  --org:#be123c; --org-deep:#500724;
-  --amber:#fbbf24; --rose:#fb7185; --cyan:#fb7185;
+  --sky:#f472b6; --sky-deep:#e41280;
+  --teal:#f472b6; --teal-deep:#e41280;
+  --org:#60a5fa; --org-deep:#0769e3;
+  --amber:#f472b6; --rose:#f472b6; --cyan:#f472b6;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#fb7185 5%,#be123c 50%,#fb7185 95%);
+  --grad:linear-gradient(100deg,#fb71b9 5%,#125fbe 50%,#fb71b9 95%);
   --ongrad:#0a0c14;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(190, 18, 60,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(80, 7, 36,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(80, 7, 36,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(251, 113, 133,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(18,95,190,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(80,7,45,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(80,7,45,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(251,113,185,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(190, 18, 60,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(80, 7, 36,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(80, 7, 36,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(18,95,190,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(80,7,45,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(80,7,45,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#be123c; --sky-deep:#500724;
-  --teal:#500724; --teal-deep:#500724;
-  --org:#be123c; --org-deep:#500724;
-  --amber:#b45309; --rose:#be123c; --cyan:#500724;
+  --sky:#f40c85; --sky-deep:#8a064b;
+  --teal:#066eee; --teal-deep:#033b81;
+  --org:#f40c85; --org-deep:#8a064b;
+  --amber:#f40c85; --rose:#f40c85; --cyan:#066eee;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#be123c,#500724,#be123c);
+  --grad:linear-gradient(100deg,#be126c,#072850,#be126c);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,12 +129,12 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(251,191,36,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(251,191,36,.55)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(249,38,148,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(249,38,148,.55)}70%{box-shadow:0 0 0 12px rgba(249,38,148,0)}100%{box-shadow:0 0 0 0 rgba(249,38,148,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -187,11 +187,11 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
-.kv .k.o{background:rgba(251, 146, 60,.12);color:var(--org);border:1px solid rgba(251, 146, 60,.35)}
-.kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(251, 113, 133,.12);color:var(--rose);border:1px solid rgba(251, 113, 133,.35)}
+.kv .k.o{background:rgba(250,61,160,.12);color:var(--org);border:1px solid rgba(250,61,160,.35)}
+.kv .k.a{background:rgba(249,38,148,.12);color:var(--amber);border:1px solid rgba(249,38,148,.35)}
+.kv .k.g{background:rgba(251,113,185,.12);color:var(--rose);border:1px solid rgba(251,113,185,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(234, 88, 12,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(234,12,128,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -208,14 +208,14 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.08);
+  color:var(--amber);border:1px solid rgba(249,38,148,.4);background:rgba(249,38,148,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -225,13 +225,14 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec-head .udot{margin-left:.15rem}
 .ulegend{display:flex;align-items:center;gap:.75rem;margin:0 0 1.5rem;padding:.85rem 1.15rem;border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.03);color:var(--muted);font-size:.93rem}
 .ulegend strong{color:var(--ink)}
-@media (prefers-reduced-motion:reduce){.udot::after{animation:none;opacity:.35;transform:scale(.8)}}
+@media (prefers-reduced-motion:reduce){.udot::after{animation:none;opacity:.35;transform:scale(.8)}
+.udot-sm{animation:none;opacity:.7}}
 .anec-head .thumb{flex:0 0 auto;width:54px;height:54px;border-radius:14px;border:1px solid var(--line)}
 .anec-head h4{margin-bottom:0}
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:var(--radius);
+.folk-note{background:rgba(249,38,148,.06);border:1px solid rgba(249,38,148,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -242,9 +243,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
-.lvl-theory .level{background:rgba(251, 146, 60,.1);color:var(--org);border:1px solid rgba(251, 146, 60,.4)}
-.lvl-unknown .level{background:rgba(251, 113, 133,.1);color:var(--rose);border:1px solid rgba(251, 113, 133,.4)}
+.lvl-known .level{background:rgba(249,38,148,.1);color:var(--amber);border:1px solid rgba(249,38,148,.4)}
+.lvl-theory .level{background:rgba(250,61,160,.1);color:var(--org);border:1px solid rgba(250,61,160,.4)}
+.lvl-unknown .level{background:rgba(251,113,185,.1);color:var(--rose);border:1px solid rgba(251,113,185,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -265,10 +266,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -281,7 +281,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(251, 113, 133,.05);border:1px solid rgba(251, 113, 133,.3);border-radius:var(--radius);
+.limits{background:rgba(251,113,185,.05);border:1px solid rgba(251,113,185,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -322,7 +322,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}
-  .in .ebar .fill{transition:none}
+  .ebar.in .fill{transition:none}
 }
 
 /* --- ambient motion additions: subtle, additive, non-intrusive --- */
@@ -348,7 +348,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fb7185), var(--mpc2, #fb7185)) border-box;
+    linear-gradient(135deg, var(--mpc1, #fb71b9), var(--mpc2, #fb71b9)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -360,11 +360,11 @@ mini-poll { display: block; }
   color: var(--muted, #a9b1c9); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #f92694); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fb7185);
-  box-shadow: 0 0 10px var(--mpc1, #fb7185);
+  background: var(--mpc1, #fb71b9);
+  box-shadow: 0 0 10px var(--mpc1, #fb71b9);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -398,7 +398,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fb7185), var(--acc2, #fb7185), var(--acc3, #be123c));
+  background: linear-gradient(100deg, var(--acc1, #fb71b9), var(--acc2, #fb71b9), var(--acc3, #125fbe));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -419,23 +419,23 @@ mini-poll { display: block; }
   background: rgba(255,255,255,.03); color: var(--ink, #edf0f9);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #fbbf24); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #fbbf24); background: rgba(251,191,36,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #f92694); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #f92694); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #f92694); background: rgba(249,38,148,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fb7185), var(--acc2, #fb7185));
+  background: linear-gradient(100deg, var(--acc1, #fb71b9), var(--acc2, #fb71b9));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #fbbf24;
-  border: 1px dashed rgba(251,191,36,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #f92694;
+  border: 1px dashed rgba(249,38,148,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
@@ -443,17 +443,17 @@ mini-poll { display: block; }
   font-size: .9rem; color: var(--ink, #edf0f9); margin-bottom: .28rem;
 }
 .mpoll-pct { font-weight: 800; color: var(--muted, #a9b1c9); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #fbbf24); font-weight: 700; font-size: .8rem; }
+.mpoll-mine { color: var(--amber, #f92694); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fb7185), var(--acc2, #fb7185), var(--acc3, #be123c));
+  background: linear-gradient(90deg, var(--acc1, #fb71b9), var(--acc2, #fb71b9), var(--acc3, #125fbe));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(249,38,148,.45); }
 .mpoll-total {
   margin-top: .8rem; font-size: .85rem; color: var(--faint, #7f88a5);
 }
@@ -477,13 +477,61 @@ mini-poll { display: block; }
   .mpoll-q { font-size: 1.02rem; }
 }
 
+
+.bridge{margin:1.4rem 0;padding:.95rem 1.15rem;border-left:3px solid #fb71b9;background:rgba(251,113,185,.06);border-radius:0 12px 12px 0;color:var(--muted);font-size:.93rem;line-height:1.7}
+.bridge strong{color:var(--ink)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0}
+@media(max-width:720px){.duo{grid-template-columns:1fr}}
+.cmp-row{margin:.55rem 0;font-size:.92rem;color:var(--muted);line-height:1.6}
+.cmp-row .k{display:block;font-size:.72rem;letter-spacing:.12em;font-weight:800;color:#fb71b9;margin-bottom:.15rem}
+.cmp-row strong{color:var(--ink)}
+.card h3 .vs{color:#fb71b9}
+.udot-sm{display:inline-block;width:9px;height:9px;border-radius:50%;background:#fb71b9;margin-right:.4rem;animation:udotPulse 2.4s ease-in-out infinite}
+/* benefit tiers + who-it-suits tiles + layman tiles (ch6–ch7) */
+.tier-grid{display:grid;gap:1.2rem;margin:0 0 1.4rem}
+.tier-grid .scard{position:relative;overflow:hidden}
+.tier-grid .scard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px}
+.tier-grid .lvl-known::before{background:var(--amber)}
+.tier-grid .lvl-theory::before{background:#fa3da0}
+.tier-grid .lvl-unknown::before{background:var(--rose)}
+.tier-grid .scard ul{list-style:none;margin-top:.8rem;display:grid;gap:.6rem}
+.tier-grid .scard ul li{position:relative;padding-left:1.4rem;color:var(--muted);font-size:.96rem}
+.tier-grid .scard ul li::before{content:"▸";position:absolute;left:0;font-weight:800}
+.tier-grid .lvl-known ul li::before{color:var(--amber)}
+.tier-grid .lvl-theory ul li::before{color:#fa3da0}
+.tier-grid .lvl-unknown ul li::before{color:var(--rose)}
+.tier-grid .scard ul li strong{color:var(--ink)}
+.tier-grid .ulegend{margin:0 0 1rem}
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:0 0 1.4rem}
+@media(max-width:720px){.fit-grid{grid-template-columns:1fr}}
+.fit-tile{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;position:relative;overflow:hidden}
+.fit-tile::before{content:"";position:absolute;top:0;left:0;right:0;height:4px}
+.fit-yes::before{background:var(--grad)}
+.fit-no{border-color:rgba(251,113,185,.35)}
+.fit-no::before{background:linear-gradient(90deg,var(--amber),var(--rose))}
+.fit-tile h3{font-family:var(--disp);font-size:1.3rem;font-weight:800;margin-bottom:.25rem;letter-spacing:-.01em}
+.fit-tile .fsub{font-size:.86rem;color:var(--faint);letter-spacing:.04em;font-weight:600;margin-bottom:.5rem}
+.fit-tile ul{list-style:none;margin-top:.6rem;display:grid;gap:.65rem}
+.fit-tile ul li{position:relative;padding-left:1.6rem;color:var(--muted);font-size:.96rem}
+.fit-tile ul li::before{position:absolute;left:0;font-weight:800}
+.fit-yes ul li::before{content:"✓";color:var(--sky)}
+.fit-no ul li::before{content:"✕";color:var(--rose)}
+.fit-tile ul li strong{color:var(--ink)}
+.fit-note{margin-top:1.2rem;font-size:.92rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:1rem}
+.fit-note strong{color:var(--ink)}
+.layman{display:flex;gap:.8rem;align-items:flex-start;margin-top:1.1rem;padding:.95rem 1.15rem;
+  border:1px dashed var(--line);border-radius:12px;background:rgba(255,255,255,.03);
+  color:var(--muted);font-size:.93rem;line-height:1.65}
+.layman .udot-sm{flex:0 0 auto;margin:.45rem 0 0}
+.layman strong{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.udot-sm{animation:none;opacity:.7}}
 </style>
 </head>
 <body>
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fb7185"/><stop offset="50%" stop-color="#fb7185"/><stop offset="100%" stop-color="#be123c"/>
+      <stop offset="0%" stop-color="#fb71b9"/><stop offset="50%" stop-color="#fb71b9"/><stop offset="100%" stop-color="#125fbe"/>
     </linearGradient>
   </defs>
 </svg>
@@ -491,7 +539,7 @@ mini-poll { display: block; }
 <svg id="dots" aria-hidden="true"></svg>
 <div class="orb o1" aria-hidden="true"></div><div class="orb o2" aria-hidden="true"></div><div class="orb o3" aria-hidden="true"></div>
 <canvas id="confetti" aria-hidden="true"></canvas>
-<div id="doneToast" role="status">You made it through the triple agonist 🎉</div>
+<div id="doneToast" role="status">You made it through the desire-drug deep dive 🎉</div>
 <div id="progress" aria-hidden="true"></div>
 <div id="themeToggle" role="group" aria-label="Color theme">
   <button type="button" class="tt-opt" data-mode="light" aria-pressed="false">
@@ -508,16 +556,18 @@ mini-poll { display: block; }
   <a href="#ch2"><span class="n">02</span>Tanning Accident</a>
   <a href="#ch3"><span class="n">03</span>Brain Pathway</a>
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
-  <a href="#ch5"><span class="n">05</span>Vs Addyi</a>
-  <a href="#ch6"><span class="n">06</span>What People Say</a>
-  <a href="#ch7"><span class="n">07</span>Risks & Unknowns</a>
-  <a href="#ch8"><span class="n">08</span>Glossary</a>
-  <a href="#ch9"><span class="n">09</span>Takeaways</a>
+  <a href="#ch5"><span class="n">05</span>Head to Head</a>
+  <a href="#ch6"><span class="n">06</span>Potential Benefits</a>
+  <a href="#ch7"><span class="n">07</span>Who It May Suit</a>
+  <a href="#ch8"><span class="n">08</span>Community Reports</a>
+  <a href="#ch9"><span class="n">09</span>Risks & Unknowns</a>
+  <a href="#ch10"><span class="n">10</span>Glossary</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
 <nav class="chapters" aria-label="Chapters"><div class="rail" id="rail">
-  <a href="#ch1">01 · Desire drug</a><a href="#ch2">02 · Tanning accident</a><a href="#ch3">03 · Brain pathway</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Vs Addyi</a><a href="#ch6">06 · Reports</a><a href="#ch7">07 · Risks</a><a href="#ch8">08 · Glossary</a><a href="#ch9">09 · Takeaways</a>
+  <a href="#ch1">01 · Desire drug</a><a href="#ch2">02 · Tanning accident</a><a href="#ch3">03 · Brain pathway</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Head to Head</a><a href="#ch6">06 · Benefits</a><a href="#ch7">07 · Who it suits</a><a href="#ch8">08 · Reports</a><a href="#ch9">09 · Risks</a><a href="#ch10">10 · Glossary</a><a href="#ch11">11 · Takeaways</a>
 </div></nav>
 
 <header class="hero">
@@ -544,20 +594,20 @@ mini-poll { display: block; }
   <h2>What <span class="hl">PT-141</span> actually is</h2>
   <p class="lede">PT-141 — generic name <strong>bremelanotide</strong> — is a small cyclic peptide that flips switches on <strong>melanocortin receptors in the brain</strong> linked to sexual desire. It’s not a hormone, not a blood-flow pill, and not a supplement: it’s a prescription medicine approved as <strong>Vyleesi</strong>.</p>
   <div class="diagram reveal">
-    <svg viewBox="0 0 640 248" role="img" aria-label="Seven amino acids in a ring: bremelanotide's compact cyclic structure">
+    <svg viewBox="0 0 640 262" role="img" aria-label="Seven amino acids in a ring: bremelanotide's compact cyclic structure">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">BREMELANOTIDE · 7 AMINO ACIDS · CYCLIC PEPTIDE</text>
       <g>
-        <circle cx="320.0" cy="23.0" r="11" fill="#151b36" stroke="#be123c" stroke-width="3"/>
-        <circle cx="394.3" cy="58.8" r="11" fill="#151b36" stroke="#be123c" stroke-width="3"/>
-        <circle cx="412.6" cy="139.1" r="11" fill="#151b36" stroke="#be123c" stroke-width="3"/>
-        <circle cx="361.2" cy="203.6" r="11" fill="#151b36" stroke="#be123c" stroke-width="3"/>
-        <circle cx="278.8" cy="203.6" r="11" fill="#151b36" stroke="#be123c" stroke-width="3"/>
-        <circle cx="227.4" cy="139.1" r="11" fill="#151b36" stroke="#be123c" stroke-width="3"/>
-        <circle cx="245.7" cy="58.8" r="11" fill="#151b36" stroke="#be123c" stroke-width="3"/>
+        <circle cx="320.0" cy="43.0" r="11" fill="#151b36" stroke="#125fbe" stroke-width="3"/>
+        <circle cx="394.3" cy="78.8" r="11" fill="#151b36" stroke="#125fbe" stroke-width="3"/>
+        <circle cx="412.6" cy="159.1" r="11" fill="#151b36" stroke="#125fbe" stroke-width="3"/>
+        <circle cx="361.2" cy="223.6" r="11" fill="#151b36" stroke="#125fbe" stroke-width="3"/>
+        <circle cx="278.8" cy="223.6" r="11" fill="#151b36" stroke="#125fbe" stroke-width="3"/>
+        <circle cx="227.4" cy="159.1" r="11" fill="#151b36" stroke="#125fbe" stroke-width="3"/>
+        <circle cx="245.7" cy="78.8" r="11" fill="#151b36" stroke="#125fbe" stroke-width="3"/>
       </g>
-      <circle cx="320" cy="118" r="30" fill="none" stroke="#fb7185" stroke-width="2" stroke-dasharray="6 5" class="flow"/>
-      <text x="320" y="122" fill="#fb7185" font-size="14" font-weight="800" text-anchor="middle">7 aa</text>
-      <text x="320" y="232" fill="#7f88a5" font-size="12" text-anchor="middle">cyclic heptapeptide · melanocortin receptor agonist</text>
+      <circle cx="320" cy="138" r="30" fill="none" stroke="#fb71b9" stroke-width="2" stroke-dasharray="6 5" class="flow"/>
+      <text x="320" y="142" fill="#fb71b9" font-size="14" font-weight="800" text-anchor="middle">7 aa</text>
+      <text x="320" y="246" fill="#7f88a5" font-size="12" text-anchor="middle">cyclic heptapeptide · melanocortin receptor agonist</text>
 
     </svg>
     <div class="cap">Each bead is one amino acid, joined head-to-tail into a ring — the cyclic shape helps it survive long enough to reach the brain.</div>
@@ -581,25 +631,25 @@ mini-poll { display: block; }
     <svg viewBox="0 0 640 210" role="img" aria-label="Timeline from melanotan tanning research to the 2019 approval of Vyleesi">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">FROM SUNLESS TAN TO DESIRE DRUG</text>
       <line x1="60" y1="110" x2="580" y2="110" stroke="#3a4160" stroke-width="3"/>
-      <line x1="60" y1="110" x2="580" y2="110" stroke="#fb7185" stroke-width="3" class="flowseq" opacity=".8"/>
-      <circle cx="90" cy="110" r="26" fill="none" stroke="#be123c" stroke-width="2" class="ringp"/>
-      <circle cx="90" cy="110" r="10" fill="#be123c"/>
-      <text x="90" y="72" fill="#fb7185" font-size="14" font-weight="800" text-anchor="middle">1980s–90s</text>
+      <line x1="60" y1="110" x2="580" y2="110" stroke="#fb71b9" stroke-width="3" class="flowseq" opacity=".8"/>
+      <circle cx="90" cy="110" r="26" fill="none" stroke="#125fbe" stroke-width="2" class="ringp"/>
+      <circle cx="90" cy="110" r="10" fill="#125fbe"/>
+      <text x="90" y="72" fill="#fb71b9" font-size="14" font-weight="800" text-anchor="middle">1980s–90s</text>
       <text x="90" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">Tanning quest</text>
-      <text x="90" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">melanotan peptides studied for pigment</text>
-      <circle cx="243" cy="110" r="26" fill="none" stroke="#be123c" stroke-width="2" class="ringp"/>
-      <circle cx="243" cy="110" r="10" fill="#be123c"/>
-      <text x="243" y="72" fill="#fb7185" font-size="14" font-weight="800" text-anchor="middle">2000s</text>
+      <text x="90" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">tanning research</text>
+      <circle cx="243" cy="110" r="26" fill="none" stroke="#125fbe" stroke-width="2" class="ringp"/>
+      <circle cx="243" cy="110" r="10" fill="#125fbe"/>
+      <text x="243" y="72" fill="#fb71b9" font-size="14" font-weight="800" text-anchor="middle">2000s</text>
       <text x="243" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">Awkward finding</text>
-      <text x="243" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">male volunteers report erections</text>
-      <circle cx="397" cy="110" r="26" fill="none" stroke="#be123c" stroke-width="2" class="ringp"/>
-      <circle cx="397" cy="110" r="10" fill="#be123c"/>
-      <text x="397" y="72" fill="#fb7185" font-size="14" font-weight="800" text-anchor="middle">2010s</text>
+      <text x="243" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">erections reported</text>
+      <circle cx="397" cy="110" r="26" fill="none" stroke="#125fbe" stroke-width="2" class="ringp"/>
+      <circle cx="397" cy="110" r="10" fill="#125fbe"/>
+      <text x="397" y="72" fill="#fb71b9" font-size="14" font-weight="800" text-anchor="middle">2010s</text>
       <text x="397" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">The pivot</text>
-      <text x="397" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">erectile trials stall; HSDD pursued</text>
-      <circle cx="550" cy="110" r="26" fill="none" stroke="#be123c" stroke-width="2" class="ringp"/>
-      <circle cx="550" cy="110" r="10" fill="#be123c"/>
-      <text x="550" y="72" fill="#fb7185" font-size="14" font-weight="800" text-anchor="middle">2019</text>
+      <text x="397" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">pivot to HSDD</text>
+      <circle cx="550" cy="110" r="26" fill="none" stroke="#125fbe" stroke-width="2" class="ringp"/>
+      <circle cx="550" cy="110" r="10" fill="#125fbe"/>
+      <text x="550" y="72" fill="#fb71b9" font-size="14" font-weight="800" text-anchor="middle">2019</text>
       <text x="550" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">Approval</text>
       <text x="550" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">Vyleesi cleared for HSDD</text>
 
@@ -622,20 +672,20 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 240" role="img" aria-label="Four-step proposed mechanism: as-needed dose, melanocortin binding, dopamine cascade, desire">
       <g text-anchor="middle">
-        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fb7185" stroke-width="2"/>
-        <text x="84" y="105" fill="#fb7185" font-size="13" font-weight="800">1 · DOSE</text>
+        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fb71b9" stroke-width="2"/>
+        <text x="84" y="105" fill="#fb71b9" font-size="13" font-weight="800">1 · DOSE</text>
         <text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Taken as needed,</text>
         <text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">before intimacy</text>
-        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#be123c" stroke-width="2"/>
-        <text x="236" y="105" fill="#be123c" font-size="13" font-weight="800">2 · BIND</text>
+        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#125fbe" stroke-width="2"/>
+        <text x="236" y="105" fill="#125fbe" font-size="13" font-weight="800">2 · BIND</text>
         <text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Melanocortin receptors</text>
         <text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">MC4R/MC3R switch on</text>
-        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fb7185" stroke-width="2"/>
-        <text x="388" y="105" fill="#fb7185" font-size="13" font-weight="800">3 · CASCADE</text>
+        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fb71b9" stroke-width="2"/>
+        <text x="388" y="105" fill="#fb71b9" font-size="13" font-weight="800">3 · CASCADE</text>
         <text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Dopamine-linked</text>
         <text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">motivation circuits stir</text>
-        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#be123c" stroke-width="2"/>
-        <text x="540" y="105" fill="#be123c" font-size="13" font-weight="800">4 · DESIRE</text>
+        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#125fbe" stroke-width="2"/>
+        <text x="540" y="105" fill="#125fbe" font-size="13" font-weight="800">4 · DESIRE</text>
         <text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Interest rises;</text>
         <text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">plumbing not included</text>
       </g>
@@ -646,10 +696,152 @@ mini-poll { display: block; }
     </svg>
     <div class="cap">The proposed chain — a brain-first path to desire, distinct from hormones and blood-flow drugs.</div>
   </div>
-<div class="ebar"><div class="row"><span class="t">Desire scores (phase 3)</span><span class="v">modest but real</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#fb7185,#be123c)"></div></div><div class="note">Small average gains on validated desire scales; responder analyses show about a quarter improved meaningfully.</div></div>
-<div class="ebar"><div class="row"><span class="t">Distress reduction</span><span class="v">significant</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#be123c,#fb7185)"></div></div><div class="note">Less distress about low desire — often the outcome patients say matters most.</div></div>
-<div class="ebar"><div class="row"><span class="t">Nausea burden</span><span class="v">the trade-off</span></div><div class="track"><div class="fill" style="--w:68%;background:linear-gradient(90deg,#500724,#be123c)"></div></div><div class="note">Roughly 4 in 10 reported nausea in trials; the main reason people stop.</div></div>
-<div class="ebar"><div class="row"><span class="t">Long-term data</span><span class="v">thin</span></div><div class="track"><div class="fill" style="--w:25%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">Trials lasted months. Years-long effects on the brain’s motivation wiring are unstudied.</div></div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Two roads — brain-first vs blood-flow</h4>
+<svg viewBox="0 0 640 310" role="img" aria-label="PT-141 brain-first pathway contrasted with PDE5 inhibitor blood-flow pathway">
+<g text-anchor="middle">
+<text x="20" y="32" fill="#fb71b9" font-size="11" font-weight="800" text-anchor="start">BRAIN-FIRST (central)</text>
+<rect x="20" y="50" width="150" height="80" rx="14" fill="#151b36" stroke="#fb71b9" stroke-width="2"/>
+<text x="95" y="82" fill="#fb71b9" font-size="12" font-weight="800">PT-141</text>
+<text x="95" y="104" fill="#a9b1c9" font-size="10" font-weight="600">melanocortin agonist</text>
+<rect x="245" y="50" width="150" height="80" rx="14" fill="#151b36" stroke="#fb71b9" stroke-width="2"/>
+<text x="320" y="82" fill="#fb71b9" font-size="12" font-weight="800">HYPOTHALAMUS</text>
+<text x="320" y="104" fill="#a9b1c9" font-size="10" font-weight="600">MC4R · MC3R switch on</text>
+<rect x="470" y="50" width="150" height="80" rx="14" fill="#151b36" stroke="#fb71b9" stroke-width="2"/>
+<text x="545" y="82" fill="#fb71b9" font-size="12" font-weight="800">DESIRE</text>
+<text x="545" y="104" fill="#a9b1c9" font-size="10" font-weight="600">wanting rises</text>
+<path d="M170 90 h75" stroke="#fb71b9" stroke-width="2" stroke-dasharray="5 5" fill="none" class="flowseq"/>
+<path d="M395 90 h75" stroke="#fb71b9" stroke-width="2" stroke-dasharray="5 5" fill="none" class="flowseq2"/>
+<circle r="6" fill="#fb71b9"><animateMotion dur="2.6s" repeatCount="indefinite" path="M170 90 h75"/></circle>
+<circle r="6" fill="#fb71b9"><animateMotion dur="2.6s" begin="1.3s" repeatCount="indefinite" path="M395 90 h75"/></circle>
+<text x="20" y="172" fill="#60a5fa" font-size="11" font-weight="800" text-anchor="start">BLOOD-FLOW (vascular)</text>
+<rect x="20" y="190" width="150" height="80" rx="14" fill="#151b36" stroke="#60a5fa" stroke-width="2"/>
+<text x="95" y="222" fill="#60a5fa" font-size="12" font-weight="800">PDE5 INHIBITOR</text>
+<text x="95" y="244" fill="#a9b1c9" font-size="10" font-weight="600">e.g. sildenafil</text>
+<rect x="245" y="190" width="150" height="80" rx="14" fill="#151b36" stroke="#60a5fa" stroke-width="2"/>
+<text x="320" y="222" fill="#60a5fa" font-size="12" font-weight="800">BLOOD VESSELS</text>
+<text x="320" y="244" fill="#a9b1c9" font-size="10" font-weight="600">PDE5 blocked</text>
+<rect x="470" y="190" width="150" height="80" rx="14" fill="#151b36" stroke="#60a5fa" stroke-width="2"/>
+<text x="545" y="222" fill="#60a5fa" font-size="12" font-weight="800">ERECTION</text>
+<text x="545" y="244" fill="#a9b1c9" font-size="10" font-weight="600">blood flow up</text>
+<path d="M170 230 h75" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5 5" fill="none" class="flowseq"/>
+<path d="M395 230 h75" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5 5" fill="none" class="flowseq2"/>
+<circle r="6" fill="#60a5fa"><animateMotion dur="2.6s" begin="0.6s" repeatCount="indefinite" path="M170 230 h75"/></circle>
+<circle r="6" fill="#60a5fa"><animateMotion dur="2.6s" begin="1.9s" repeatCount="indefinite" path="M395 230 h75"/></circle>
+</g></svg>
+<div class="cap">One drug starts in the brain, the other in the blood vessels — different machinery, different jobs.</div>
+</div>
+<div class="bridge reveal"><strong>The split that matters.</strong> Most "desire vs performance" confusion comes from mixing these two roads. PT-141 works upstream — on the brain circuits that generate wanting. PDE5 inhibitors work downstream — on the blood vessels that produce erections. A person can have one problem, the other, or both.</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Desire vs erection — related, not the same</h4>
+<svg viewBox="0 0 640 230" role="img" aria-label="Desire versus erection: related but distinct aspects of sexual function">
+<g text-anchor="middle">
+<rect x="30" y="40" width="250" height="150" rx="14" fill="#151b36" stroke="#fb71b9" stroke-width="2"/>
+<text x="155" y="68" fill="#fb71b9" font-size="13" font-weight="800">DESIRE</text>
+<circle cx="155" cy="115" r="26" fill="none" stroke="#fb71b9" stroke-width="2"/>
+<circle cx="155" cy="115" r="26" fill="none" stroke="#fb71b9" stroke-width="2" class="ringp"/>
+<circle cx="147" cy="110" r="4" fill="#fb71b9"/><circle cx="163" cy="108" r="4" fill="#fb71b9"/><circle cx="155" cy="122" r="4" fill="#fb71b9"/>
+<text x="155" y="160" fill="#a9b1c9" font-size="11" font-weight="600">wanting · interest</text>
+<text x="155" y="178" fill="#7f88a5" font-size="10" font-weight="600">PT-141&apos;s target</text>
+<text x="320" y="105" fill="#7f88a5" font-size="22" font-weight="800">&#8800;</text>
+<text x="320" y="130" fill="#7f88a5" font-size="10" font-weight="600">related,</text>
+<text x="320" y="144" fill="#7f88a5" font-size="10" font-weight="600">not the same</text>
+<rect x="360" y="40" width="250" height="150" rx="14" fill="#151b36" stroke="#60a5fa" stroke-width="2"/>
+<text x="485" y="68" fill="#60a5fa" font-size="13" font-weight="800">ERECTION</text>
+<rect x="440" y="95" width="90" height="34" rx="17" fill="none" stroke="#60a5fa" stroke-width="2" stroke-dasharray="6 5" class="flowseq"/>
+<circle r="5" fill="#60a5fa"><animateMotion dur="2s" repeatCount="indefinite" path="M445 112 h80"/></circle>
+<text x="485" y="160" fill="#a9b1c9" font-size="11" font-weight="600">physical response · blood flow</text>
+<text x="485" y="178" fill="#7f88a5" font-size="10" font-weight="600">PDE5 inhibitors&apos; target</text>
+</g></svg>
+<div class="cap">Desire is the wanting; erection is the plumbing. Treating one doesn&apos;t automatically fix the other.</div>
+</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">The melanocortin receptor, up close</h4>
+<svg viewBox="0 0 640 220" role="img" aria-label="PT-141 docking with the melanocortin receptor and triggering a signal cascade">
+<g text-anchor="middle">
+<rect x="40" y="85" width="110" height="40" rx="20" fill="#125fbe" opacity=".9"/>
+<text x="95" y="110" fill="#fff" font-size="11" font-weight="800">PT-141</text>
+<path d="M150 105 C 200 105, 220 105, 255 105" stroke="#fb71b9" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+<circle r="6" fill="#fb71b9"><animateMotion dur="2.4s" repeatCount="indefinite" path="M150 105 C 200 105, 220 105, 255 105"/></circle>
+<rect x="270" y="60" width="120" height="90" rx="14" fill="#151b36" stroke="#fb71b9" stroke-width="2"/>
+<text x="330" y="88" fill="#fb71b9" font-size="12" font-weight="800">MC4R</text>
+<text x="330" y="106" fill="#a9b1c9" font-size="10" font-weight="600">receptor</text>
+<circle cx="330" cy="128" r="10" fill="none" stroke="#fb71b9" stroke-width="2" class="ringp"/>
+<circle cx="330" cy="128" r="4" fill="#fb71b9"/>
+<path d="M390 105 h45" stroke="#fb71b9" stroke-width="2" stroke-dasharray="5 5" fill="none" class="flowseq"/>
+<rect x="440" y="60" width="160" height="90" rx="14" fill="#151b36" stroke="#125fbe" stroke-width="2"/>
+<text x="520" y="88" fill="#fb71b9" font-size="12" font-weight="800">SIGNAL ON</text>
+<text x="520" y="106" fill="#a9b1c9" font-size="10" font-weight="600">cascade fires</text>
+<circle r="4" fill="#fb71b9"><animateMotion dur="1.8s" repeatCount="indefinite" path="M520 118 v22"/></circle>
+<text x="520" y="142" fill="#7f88a5" font-size="10" font-weight="600">downstream circuits stir</text>
+</g></svg>
+<div class="cap">Docking is the established part — the full map from receptor to felt desire is still being drawn.</div>
+</div>
+<div class="bridge reveal"><strong>Why the brain, not the bloodstream.</strong> Melanocortin receptors sit in hypothalamic circuits tied to motivation and reward — the same neighborhoods that handle appetite and arousal. That&apos;s the whole bet behind PT-141: nudge the wanting circuitry and the rest follows. It also explains the nausea — those circuits sit near the ones that govern it.</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">What happens in the brain</h4>
+<svg viewBox="0 0 640 250" role="img" aria-label="Animated brain response: hypothalamus signal traveling to motivation circuits">
+<g text-anchor="middle">
+<ellipse cx="320" cy="125" rx="185" ry="95" fill="#151b36" stroke="#fb71b9" stroke-width="2"/>
+<text x="320" y="52" fill="#7f88a5" font-size="10" font-weight="600">simplified — one hemisphere view</text>
+<circle cx="300" cy="150" r="16" fill="#fb71b9" opacity=".85"/>
+<circle cx="300" cy="150" r="16" fill="none" stroke="#fb71b9" stroke-width="2" class="ringp"/>
+<text x="300" y="185" fill="#a9b1c9" font-size="11" font-weight="600">hypothalamus</text>
+<text x="300" y="200" fill="#7f88a5" font-size="10" font-weight="600">MC4R-rich region</text>
+<path d="M318 140 Q 400 120 462 92" stroke="#fb71b9" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+<circle r="6" fill="#fb6ab6"><animateMotion dur="2.8s" repeatCount="indefinite" path="M318 140 Q 400 120 462 92"/></circle>
+<circle r="6" fill="#fb6ab6"><animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite" path="M318 140 Q 400 120 462 92"/></circle>
+<circle cx="478" cy="86" r="14" fill="#125fbe" opacity=".9"/>
+<circle cx="478" cy="86" r="14" fill="none" stroke="#fb6ab6" stroke-width="2" class="ringp"/>
+<text x="478" y="60" fill="#a9b1c9" font-size="11" font-weight="600">motivation circuits</text>
+<text x="478" y="116" fill="#7f88a5" font-size="10" font-weight="600">dopamine-linked</text>
+<text x="150" y="90" fill="#7f88a5" font-size="10" font-weight="600">PT-141 signal in</text>
+<path d="M120 100 Q 180 120 284 142" stroke="#7f88a5" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+</g></svg>
+<div class="cap">Proposed sequence — receptor binding is established; the circuit-level details are still being mapped.</div>
+</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Onset &amp; duration — what the evidence supports</h4>
+<svg viewBox="0 0 640 210" role="img" aria-label="Onset and duration timeline with honest evidence labeling">
+<g text-anchor="middle">
+<line x1="60" y1="110" x2="580" y2="110" stroke="#7f88a5" stroke-width="3"/>
+<circle cx="90" cy="110" r="10" fill="#fb71b9"/>
+<text x="90" y="145" fill="#fb71b9" font-size="11" font-weight="800">AS-NEEDED</text>
+<text x="90" y="162" fill="#7f88a5" font-size="10" font-weight="600">before intimacy</text>
+<circle cx="300" cy="110" r="10" fill="#fb6ab6"/>
+<text x="300" y="145" fill="#fb6ab6" font-size="11" font-weight="800">~45 MIN</text>
+<text x="300" y="162" fill="#7f88a5" font-size="10" font-weight="600">per approved label</text>
+<circle r="6" fill="#fb71b9"><animateMotion dur="3.2s" repeatCount="indefinite" path="M90 110 h210"/></circle>
+<rect x="330" y="92" width="220" height="36" rx="18" fill="none" stroke="#7f88a5" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="440" y="108" fill="#a9b1c9" font-size="11" font-weight="600">effect window</text>
+<text x="440" y="150" fill="#7f88a5" font-size="10" font-weight="600">not precisely characterized</text>
+<text x="320" y="40" fill="#7f88a5" font-size="11" font-weight="600">timing per label — duration of effect per use isn&apos;t precisely established</text>
+</g></svg>
+<div class="cap">What&apos;s solid: the label&apos;s as-needed timing. What&apos;s fuzzy: exactly how long the effect lasts each time.</div>
+</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">What it does vs what it doesn&apos;t do</h4>
+<div class="duo">
+<div class="card reveal"><h3>What it does</h3>
+<p>Acts on <strong>melanocortin receptors in the brain</strong> — a central, not vascular, mechanism.</p>
+<p>Studied for <strong>low sexual desire (HSDD)</strong> in premenopausal women; approved as Vyleesi in 2019.</p>
+<p>Used <strong>as needed</strong> ahead of anticipated intimacy.</p>
+<p>Showed <strong>modest average gains</strong> in desire scores across phase 3 trials.</p>
+<p>Common costs: <strong>nausea, flushing, headache</strong>, plus a transient blood-pressure bump.</p>
+</div>
+<div class="card reveal"><h3>What it doesn&apos;t do</h3>
+<p><strong>Doesn&apos;t directly produce erections</strong> — it isn&apos;t a blood-flow drug.</p>
+<p><strong>Doesn&apos;t work like Viagra/Cialis</strong> — different machinery, different job.</p>
+<p><strong>Doesn&apos;t raise testosterone</strong> — it isn&apos;t a hormone.</p>
+<p><strong>Isn&apos;t approved for men</strong> — male use is off-label and unregulated.</p>
+<p><strong>Doesn&apos;t work for everyone</strong> — non-responders are common in trials and forums alike.</p>
+</div>
+</div>
+</div>
+<div class="ebar reveal"><div class="row"><span class="t">Desire scores (phase 3)</span><span class="v">modest but real</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#fb71b9,#125fbe)"></div></div><div class="note">Small average gains on validated desire scales; responder analyses show about a quarter improved meaningfully.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Distress reduction</span><span class="v">significant</span></div><div class="track"><div class="fill" style="--w:60%;background:linear-gradient(90deg,#125fbe,#fb71b9)"></div></div><div class="note">Less distress about low desire — often the outcome patients say matters most.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Nausea burden</span><span class="v">the trade-off</span></div><div class="track"><div class="fill" style="--w:68%;background:linear-gradient(90deg,#50072d,#125fbe)"></div></div><div class="note">Roughly 4 in 10 reported nausea in trials; the main reason people stop.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Long-term data</span><span class="v">thin</span></div><div class="track"><div class="fill" style="--w:25%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">Trials lasted months. Years-long effects on the brain’s motivation wiring are unstudied.</div></div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>The pitch: <strong>dose → bind → cascade → desire</strong>. Instead of adding fuel (hormones) or widening pipes (blood flow), PT-141 tries to <strong>wake up the wanting itself</strong> — which is also why its effects are subtle and its side effects are felt in the gut and head, not the bloodstream.</p></div>
 </section>
 <mini-poll slug="pt141-mini-ch3"
@@ -672,30 +864,64 @@ mini-poll { display: block; }
   data-answers='[["✅", "Real, even if small"], ["🤔", "Need better drugs"], ["😐", "Placebo-adjacent"], ["💬", "Meaningful for some"]]'>
 </mini-poll>
 <section class="chapter" id="ch5">
-  <span class="eyebrow"><span class="n">05</span>PT-141 vs Addyi</span>
-  <h2>PT-141 <span class="hl">vs</span> flibanserin</h2>
-  <p class="lede">The only two prescription drugs for HSDD take <strong>opposite approaches</strong>: one rewires neurotransmitters daily, the other pings melanocortin receptors on demand.</p>
+  <span class="eyebrow"><span class="n">05</span>Head to head</span>
+  <h2>PT-141 <span class="hl">vs</span> the field</h2>
+  <p class="lede">Desire drugs and erection drugs solve <strong>different problems with different machinery</strong>. Here is how PT-141 stacks up against the neighbors — brain vs vascular, wanting vs plumbing — on mechanism, target, evidence, and limits.</p>
   <div class="grid3">
 <div class="card sky reveal"><h3>PT-141 · the on-demand ping</h3><p><strong>As-needed</strong> melanocortin agonist, taken before anticipated intimacy. Main side effects: <strong>nausea, flushing, headache</strong>, plus a transient bump in blood pressure.</p></div>
 <div class="card teal reveal"><h3>Flibanserin · the daily rewiring</h3><p><strong>Daily pill</strong> (brand Addyi) that tweaks serotonin and dopamine signaling over weeks. Main side effects: <strong>sleepiness, dizziness, low blood pressure</strong> — and a strict no-alcohol rule.</p></div>
 <div class="card org reveal"><h3>The shared fine print</h3><p>Both are for <strong>premenopausal women with acquired, generalized HSDD</strong>. Both show <strong>modest</strong> average benefits. Neither is a hormone, and neither works like a switch.</p></div>
   </div>
+<div class="grid3">
+<div class="card reveal"><h3>PT-141 <span class="vs">vs</span> Sildenafil (Viagra)</h3>
+<div class="cmp-row"><span class="k">MECHANISM</span><strong>Central</strong> melanocortin agonist, as-needed — vs <strong>peripheral</strong> PDE5 inhibitor, as-needed.</div>
+<div class="cmp-row"><span class="k">TARGET</span>Desire / wanting — vs erection / blood flow.</div>
+<div class="cmp-row"><span class="k">EVIDENCE</span><strong>Modest</strong> desire gains in HSDD trials — vs <strong>strong, decades-deep</strong> ED efficacy data.</div>
+<div class="cmp-row"><span class="k">LIMITATIONS</span>Nausea, flushing, headache, BP bump; <strong>no direct erection effect</strong> — vs headache, flushing, congestion; <strong>no desire effect</strong>; needs stimulation to work.</div>
+<div class="cmp-row"><span class="k">INTENDED USE</span>Low desire — vs difficulty with erections. <strong>Different problems.</strong></div>
+</div>
+<div class="card reveal"><h3>PT-141 <span class="vs">vs</span> Tadalafil (Cialis)</h3>
+<div class="cmp-row"><span class="k">MECHANISM</span>Same central-vs-vascular split as sildenafil.</div>
+<div class="cmp-row"><span class="k">TARGET</span>Desire — vs erection.</div>
+<div class="cmp-row"><span class="k">DURATION</span>As-needed — vs as-needed <strong>or daily</strong>, with a longer window.</div>
+<div class="cmp-row"><span class="k">EVIDENCE</span>Modest HSDD data — vs large ED evidence base (plus BPH-symptom use).</div>
+<div class="cmp-row"><span class="k">LIMITATIONS</span>Same trade-offs as above: nausea-led vs headache/flushing-led; muscle aches reported with tadalafil.</div>
+</div>
+<div class="card reveal"><h3>PT-141 <span class="vs">vs</span> PDE5 inhibitors as a class</h3>
+<div class="cmp-row"><span class="k">THE CORE SPLIT</span><strong>Brain vs blood vessels. Wanting vs plumbing.</strong> This is the single most important distinction on the page.</div>
+<div class="cmp-row"><span class="k">COMBINING THEM?</span>In principle they target different ends — but they are <strong>studied separately</strong>, and there is no established guidance for combining. Not a recommendation.</div>
+<div class="cmp-row"><span class="k">EVIDENCE GAP</span>PDE5 inhibitors have decades of data; PT-141 has small, short programs with modest average gains.</div>
+</div>
+<div class="card reveal"><h3>PT-141 <span class="vs">vs</span> Flibanserin (Addyi)</h3>
+<div class="cmp-row"><span class="k">MECHANISM</span><strong>As-needed</strong> melanocortin ping — vs <strong>daily</strong> serotonin/dopamine rewiring over weeks.</div>
+<div class="cmp-row"><span class="k">TARGET</span>Both target <strong>desire</strong> (HSDD) — the only two prescription drugs for it.</div>
+<div class="cmp-row"><span class="k">EVIDENCE</span>Both show <strong>modest</strong> average benefits. Neither works like a switch.</div>
+<div class="cmp-row"><span class="k">LIMITATIONS</span>Nausea, flushing, BP bump — vs sleepiness, dizziness, low blood pressure and a <strong>strict no-alcohol rule</strong>.</div>
+<div class="cmp-row"><span class="k">INTENDED USE</span>Both for <strong>premenopausal</strong> acquired, generalized HSDD.</div>
+</div>
+<div class="card reveal"><h3>PT-141 <span class="vs">vs</span> Testosterone approaches</h3>
+<div class="cmp-row"><span class="k">MECHANISM</span>Central melanocortin signaling — vs hormonal replacement.</div>
+<div class="cmp-row"><span class="k">TARGET</span>Desire in HSDD — vs desire when tied to <strong>documented low testosterone</strong>.</div>
+<div class="cmp-row"><span class="k">EVIDENCE</span>Modest, in a defined population — vs mixed and population-dependent.</div>
+<div class="cmp-row"><span class="k">LIMITATIONS</span><strong>Different populations, not interchangeable.</strong> Testosterone carries its own risk profile and monitoring burden.</div>
+</div>
+  </div>
   <div class="diagram reveal">
     <svg viewBox="0 0 640 230" role="img" aria-label="PT-141 and flibanserin as two separate paths converging on modest desire improvements">
       <g font-size="13" font-weight="800" text-anchor="middle">
-        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#be123c" stroke-width="2"/>
-        <text x="130" y="75" fill="#fb7185">PT-141</text>
+        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#125fbe" stroke-width="2"/>
+        <text x="130" y="75" fill="#fb71b9">PT-141</text>
         <text x="130" y="98" fill="#a9b1c9" font-size="11" font-weight="600">as-needed melanocortin</text>
         <text x="130" y="114" fill="#a9b1c9" font-size="11" font-weight="600">nausea leads side effects</text>
-        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#be123c" stroke-width="2"/>
-        <text x="510" y="75" fill="#fb7185">FLIBANSERIN</text>
+        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#125fbe" stroke-width="2"/>
+        <text x="510" y="75" fill="#fb71b9">FLIBANSERIN</text>
         <text x="510" y="98" fill="#a9b1c9" font-size="11" font-weight="600">daily serotonin/dopamine</text>
         <text x="510" y="114" fill="#a9b1c9" font-size="11" font-weight="600">sleepiness + no alcohol</text>
         <rect x="230" y="150" width="180" height="60" rx="14" fill="#151b36" stroke="#7f88a5" stroke-width="2" stroke-dasharray="7 5"/>
         <text x="320" y="176" fill="#a9b1c9" font-size="12">"MODEST DESIRE GAINS"</text>
         <text x="320" y="195" fill="#7f88a5" font-size="10" font-weight="600">both approved — neither dramatic</text>
       </g>
-      <g stroke="#fb7185" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
+      <g stroke="#fb71b9" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
         <path d="M220 100 Q 280 130 240 155"/><path d="M420 100 Q 360 130 400 155"/>
       </g>
     </svg>
@@ -704,32 +930,124 @@ mini-poll { display: block; }
 <div class="plain reveal"><div class="plabel">Plain English</div><p>It’s <strong>espresso shot vs. sleep hygiene</strong>: one acts when you need it (PT-141, with nausea as the price), the other reshapes the baseline slowly (flibanserin, with grogginess as the price). Same destination — slightly more desire, slightly less distress — different toll roads.</p></div>
 </section>
 <mini-poll slug="pt141-mini-ch5"
-  data-question="PT-141 vs Addyi — which approach makes more sense to you?"
-  data-answers='[["⚡", "PT-141 as-needed"], ["💊", "Addyi daily"], ["🤷", "Neither convinces me"], ["📊", "Need more options"]]'>
+  data-question="Which contrast matters most to you?"
+  data-answers='[["🧠", "Brain vs vascular"], ["💭", "Desire vs erection"], ["⚡", "PT-141 as-needed"], ["💊", "Daily approaches"]]'>
 </mini-poll>
 <section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>What people say</span>
-  <h2>Reports from the <span class="hl">wild</span></h2>
-  <p class="lede">Patient forums and social media hold years of Vyleesi experiences — plus a separate, sketchier stream of gray-market PT-141 chatter from people using it <strong>off-label</strong> (including men, for whom it isn’t approved). Stories, not data.</p>
-  <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div>
-  <div class="anec-grid">
-<div class="anec reveal"><div class="anec-head"><h4>The nausea trade-off</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“It worked a little, but I spent the evening nauseous.” <strong>Caveat:</strong> trial data backs this — nausea is the top reason people quit — but forum dosing/timing varies wildly.</p><div class="caveat">Pattern: the single most repeated theme, matching the label.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Timing is everything</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Take it too late and nothing happens; too early and you’re queasy at dinner.” <strong>Caveat:</strong> as-needed timing is genuinely tricky; anecdotes can’t separate bad timing from non-response.</p><div class="caveat">Pattern: a real usability wrinkle, not just an excuse.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Not a magic switch</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I felt… slightly more interested? Maybe?” <strong>Caveat:</strong> subtle effects are the hardest to distinguish from expectation — in both directions.</p><div class="caveat">Pattern: expectation management is half the story.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>The flush</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Face went red, head pounded — felt like a hot flash.” <strong>Caveat:</strong> flushing and headache are labeled side effects; severity reports skew toward the dramatic.</p><div class="caveat">Pattern: labeled effects, forum-amplified.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Off-label men</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Guys use it for libido — works, with the nausea.” <strong>Caveat:</strong> not approved for men, not studied for men at these uses; gray-market vials add unknown content.</p><div class="caveat">Pattern: a whole shadow user base the trials never covered.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Partner dynamics</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“It helped a little, but the real issue was us.” <strong>Caveat:</strong> desire is relational; no drug fixes context — the trials excluded relationship distress for a reason.</p><div class="caveat">Pattern: the wisest comments in every thread.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>The cost groan</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Hundreds a month for ‘maybe slightly more interested’?” <strong>Caveat:</strong> pricing and coverage vary; cost-benefit is personal but the math is widely resented.</p><div class="caveat">Pattern: modest efficacy meets premium pricing.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Gray-market roulette</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Research PT-141 is way cheaper online.” <strong>Caveat:</strong> unregulated vials have repeatedly tested as mislabeled or impure — cheaper can mean a different drug.</p><div class="caveat">Pattern: price pressure pushing people toward risk.</div></div>
+  <span class="eyebrow"><span class="n">06</span>Potential benefits</span>
+  <h2>Potential benefits, <span class="hl">honestly</span> tiered</h2>
+  <p class="lede">Not every claimed benefit sits on the same evidence. Here is what is <strong>established in trials</strong>, what is <strong>predicted or emerging</strong>, and what is <strong>only forum chatter</strong> — kept in separate boxes on purpose, so nothing reads as more proven than it is.</p>
+  <div class="tier-grid">
+<div class="scard lvl-known reveal"><span class="level">ESTABLISHED · solid trial data</span><h4>Desire and distress in HSDD</h4>
+<p>The one benefit with real backing — the FDA-approved indication:</p>
+<ul>
+<li><strong>Increased sexual desire</strong> in premenopausal women with acquired, generalized HSDD, measured by the FSFI desire domain in two phase 3 trials.</li>
+<li><strong>Reduced distress</strong> about low desire — a co-primary endpoint that also moved, meaning the gains registered as meaningful to the women studied.</li>
+<li><strong>Modest, not dramatic:</strong> roughly a quarter of treated women were meaningful responders vs roughly a sixth on placebo. Real — and a long way from a switch-flip.</li>
+</ul>
+<div class="layman"><span class="udot-sm" aria-hidden="true"></span><p><strong>Think of it this way:</strong> the proven benefit is a small but real lift in wanting, plus feeling less bothered about not wanting — measured with standardized questionnaires across hundreds of women, not a miracle moment.</p></div>
+</div>
+<div class="scard lvl-theory reveal"><span class="level">EMERGING · predicted, not proven</span><h4>Off-label and investigational territory</h4>
+<p>Interesting ideas with no completed proof:</p>
+<ul>
+<li><strong>Erectile function in men:</strong> bremelanotide was first developed as a nasal spray for male erectile dysfunction — phase 2 work showed signals, then the program pivoted to female HSDD. The male story was never finished, so nothing here is established.</li>
+<li><strong>Desire beyond the label population:</strong> postmenopausal women, or low desire with other causes, were not part of the approval-track trials. Interest is real; evidence isn't.</li>
+<li><strong>Spillover effects</strong> (mood, relationship satisfaction): plausible, since distress scores moved in trials — but never tested as direct endpoints.</li>
+</ul>
+<div class="layman"><span class="udot-sm" aria-hidden="true"></span><p><strong>Think of it this way:</strong> this tier is the "researchers have good reasons to wonder, but nobody finished the homework" zone — hypotheses with scaffolding, not answers.</p></div>
+</div>
+<div class="scard lvl-unknown reveal"><span class="level">COMMUNITY · unverified anecdotes</span><h4>What forums report</h4>
+<div class="ulegend"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a recurring forum theme: not verified, not evidence.</p></div>
+<ul>
+<li><span class="udot" role="img" aria-label="Unverified anecdote"></span><strong>The libido lift</strong> — "I actually felt interested again." The most repeated positive theme, and the most expectation-prone outcome there is.</li>
+<li><span class="udot" role="img" aria-label="Unverified anecdote"></span><strong>Waves of spontaneous arousal</strong> — unprompted arousal in the 1–2 hour window. Timing matches the label, which cuts both ways: consistent, not confirmatory.</li>
+<li><span class="udot" role="img" aria-label="Unverified anecdote"></span><strong>Physical response in men (off-label)</strong> — "erections came easier and felt stronger" from gray-market use: unregulated products, unknown contents, powerful placebo effects.</li>
+</ul>
+<p style="margin-top:1rem">The full collection — with caveats — lives in the <strong>Community Reports</strong> chapter below.</p>
+</div>
   </div>
-  <div class="folk-note reveal"><p>Two different crowds are talking past each other here: <strong>prescribed patients</strong> weighing modest gains against nausea, and <strong>gray-market experimenters</strong> (often men) outside any studied use. Don’t let the second crowd’s stories rewrite the first crowd’s evidence.</p></div>
+  <div class="diagram reveal">
+    <h4 style="margin:0 0 .4rem;color:var(--ink)">The evidence ladder</h4>
+    <svg viewBox="0 0 640 190" role="img" aria-label="Evidence ladder: established, emerging, and community tiers">
+      <g text-anchor="middle" font-weight="800">
+        <rect x="40" y="24" width="170" height="130" rx="14" fill="rgba(249,38,148,.07)" stroke="#f92694" stroke-width="2.5"/>
+        <text x="125" y="58" fill="#f92694" font-size="12">ESTABLISHED</text>
+        <text x="125" y="84" fill="#a9b1c9" font-size="11" font-weight="600">phase 3 trials</text>
+        <text x="125" y="102" fill="#a9b1c9" font-size="11" font-weight="600">HSDD indication</text>
+        <text x="125" y="130" fill="#7f88a5" font-size="10" font-weight="600">solid box · solid data</text>
+        <rect x="235" y="24" width="170" height="130" rx="14" fill="rgba(250,61,160,.05)" stroke="#fa3da0" stroke-width="2.5" stroke-dasharray="8 6"/>
+        <text x="320" y="58" fill="#fa3da0" font-size="12">EMERGING</text>
+        <text x="320" y="84" fill="#a9b1c9" font-size="11" font-weight="600">off-label · predicted</text>
+        <text x="320" y="102" fill="#a9b1c9" font-size="11" font-weight="600">unfinished research</text>
+        <text x="320" y="130" fill="#7f88a5" font-size="10" font-weight="600">dashed box · hypotheses</text>
+        <rect x="430" y="24" width="170" height="130" rx="14" fill="none" stroke="#fb71b9" stroke-width="2.5" stroke-dasharray="3 6"/>
+        <text x="515" y="58" fill="#fb71b9" font-size="12">COMMUNITY</text>
+        <text x="515" y="84" fill="#a9b1c9" font-size="11" font-weight="600">stories, not data</text>
+        <text x="515" y="102" fill="#a9b1c9" font-size="11" font-weight="600">unverified</text>
+        <text x="515" y="130" fill="#7f88a5" font-size="10" font-weight="600">dotted box · anecdotes</text>
+      </g>
+    </svg>
+    <div class="cap">Solid border, dashed border, dotted border — the borders are the point. Never confuse the tiers.</div>
+  </div>
 </section>
-<mini-poll slug="pt141-mini-ch6"
-  data-question="Patient stories about Vyleesi — how do you read them?"
-  data-answers='[["💬", "Encouraging"], ["🧂", "Salt required"], ["🤢", "Nausea stories win"], ["⚖️", "Stories aren’t data"]]'>
+<mini-poll slug="pt141-mini-benefits"
+  data-question="Biggest potential benefit of PT-141?"
+  data-answers='[["✅", "Desire in HSDD — proven"], ["🔮", "Emerging off-label uses"], ["💬", "Community-reported effects"], ["⚖️", "The evidence caveats matter most"]]'>
 </mini-poll>
 <section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Risks & unknowns</span>
+  <span class="eyebrow"><span class="n">07</span>Who it may suit</span>
+  <h2>Who it may suit — <span class="hl">and who it should not</span></h2>
+  <p class="lede">The label studied exactly one population. Everything outside it is uncharted — and some of it is explicitly off-limits. The <strong>approved indication</strong> is established; the rest here is general information, not a recommendation.</p>
+  <div class="fit-grid">
+<div class="fit-tile fit-yes reveal"><h3>May be relevant for</h3><div class="fsub">The population actually studied</div>
+<ul>
+<li><strong>Premenopausal women with acquired, generalized HSDD</strong> — the FDA-approved population: low desire that is new, distressing, and not explained by a medical condition, medication, or relationship problem.</li>
+<li><strong>Those who match the trial population:</strong> the RECONNECT trials enrolled premenopausal women with HSDD — so the evidence only speaks for that group.</li>
+<li><strong>Those comfortable with the trade-offs:</strong> modest average benefit set against nausea, flushing, and the blood-pressure limits in the next tile.</li>
+</ul>
+</div>
+<div class="fit-tile fit-no reveal"><h3>May not suit / extra caution</h3><div class="fsub">Label limits and caution flags</div>
+<ul>
+<li><strong>Uncontrolled hypertension or known cardiovascular disease</strong> — a labeled contraindication: bremelanotide transiently raises blood pressure.</li>
+<li><strong>Men and postmenopausal women</strong> — not part of the approval; no established efficacy or safety data for these groups.</li>
+<li><strong>Pregnancy and breastfeeding</strong> — safety not established; caution is warranted.</li>
+<li><strong>Cardiovascular risk factors</strong> — even without a diagnosis, the blood-pressure effect deserves a clinician's judgment call.</li>
+<li><strong>Anyone expecting a switch-flip</strong> — average gains were modest; mismatched expectations are the classic setup for disappointment.</li>
+</ul>
+</div>
+  </div>
+<div class="plain reveal"><div class="plabel">Plain English</div><p>Studied and approved for <strong>one group</strong>: premenopausal women with distressing, unexplained low desire. Explicitly off-limits with <strong>uncontrolled high blood pressure or heart disease</strong>. Everyone else — men, post-menopause, pregnancy — is unstudied territory, not a green light.</p></div>
+<div class="layman reveal"><span class="udot-sm" aria-hidden="true"></span><p><strong>Think of it this way:</strong> the label is a guest list with exactly one name on it. Everyone else is either uninvited (the contraindications) or standing outside the venue (unstudied groups) — and neither is the same as being welcome.</p></div>
+<p class="fit-note reveal"><strong>This is general information, not personal medical advice.</strong> Only a licensed clinician can judge whether any treatment suits your situation.</p>
+</section>
+<mini-poll slug="pt141-mini-fit"
+  data-question="Who did you think PT-141 was meant for?"
+  data-answers='[["👩", "Women with HSDD"], ["👨", "Men too"], ["🌍", "Anyone with low desire"], ["📖", "Still learning"]]'>
+</mini-poll>
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Community reports</span>
+  <h2>Community <span class="hl">reports</span></h2>
+  <p class="lede">Reddit threads, TikTok clips, YouTube and Shorts, forums — years of public chatter about Vyleesi and gray-market PT-141, including <strong>off-label</strong> use by men (for whom it isn’t approved). Recurring patterns below. Every one of these is an <strong>unverified story, not data</strong>.</p>
+  <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div>
+  <div class="anec-grid">
+<div class="anec reveal"><div class="anec-head"><h4>The libido lift</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I actually felt interested again — that part was real.” <strong>Caveat:</strong> desire is the most expectation-prone outcome there is; a forum post can’t separate drug from hope.</p><div class="caveat">Pattern: the most repeated positive theme.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Arousal out of nowhere</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Felt a wave of arousal about an hour in, completely unprompted.” <strong>Caveat:</strong> timing matches the label window, which cuts both ways — consistent, not confirmatory.</p><div class="caveat">Pattern: spontaneous-arousal reports cluster in the 1–2 hour window.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Firmer, easier (men, off-label)</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“As a guy: erections came easier and felt stronger.” <strong>Caveat:</strong> off-label, unregulated products of unknown content; placebo and novelty effects are powerful here.</p><div class="caveat">Pattern: male gray-market reports lean physical; prescription reports lean desire.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Wanting vs plumbing</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Viagra gives me the mechanics; this gave me the wanting.” <strong>Caveat:</strong> the distinction matches the pharmacology, but uncontrolled reports can’t prove it.</p><div class="caveat">Pattern: the brain-vs-vascular split shows up in user language too.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>The onset lottery</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Hit me in 45 minutes; my friend felt nothing for two hours.” <strong>Caveat:</strong> food, alcohol, and timing vary wildly across anecdotes.</p><div class="caveat">Pattern: onset reports scatter widely — the label’s timing is an average, not a promise.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>It lingered</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Felt effects well into the next day.” <strong>Caveat:</strong> no controlled duration data exists; lingering effects are anecdotes, not a measured window.</p><div class="caveat">Pattern: duration claims are the least consistent reports.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>The nausea wall</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Spent three hours nauseous; one user vomited.” <strong>Caveat:</strong> matches the label — nausea is the top trial side effect too.</p><div class="caveat">Pattern: the single most repeated negative theme, in trials and forums alike.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Flushed and pounding</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Face went red, head throbbed for an hour.” <strong>Caveat:</strong> flushing and headache are on the label; forum severity reports skew dramatic.</p><div class="caveat">Pattern: the classic vasomotor pair.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Worked once, then nothing</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“First time was great; next two times, zero.” <strong>Caveat:</strong> inconsistency is itself a pattern — and a reason anecdotes can’t establish reliability.</p><div class="caveat">Pattern: responder inconsistency is widely reported.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Wouldn’t quit (men, off-label)</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Erection lasted hours — scary, not fun.” <strong>Caveat:</strong> a prolonged erection is a medical emergency; these anecdotes are warnings, not endorsements, and lack verification.</p><div class="caveat">Pattern: rare but alarming; the reports to take most seriously.</div></div>
+</div>
+</section>
+<mini-poll slug="pt141-mini-ch6"
+  data-question="How do you read these community reports?"
+  data-answers='[["💬", "Encouraging"], ["🧂", "Salt required"], ["🤢", "Side effects dominate"], ["⚖️", "Stories aren’t data"]]'>
+</mini-poll>
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Risks & unknowns</span>
   <h2>Risks &amp; <span class="hl">unknowns</span></h2>
   <p class="lede">What the label says, what’s plausible, and what nobody has studied — kept in separate boxes on purpose.</p>
   <div class="safety-grid">
@@ -746,77 +1064,69 @@ mini-poll { display: block; }
   data-question="Biggest concern with PT-141?"
   data-answers='[["🤢", "Nausea"], ["🩸", "Blood pressure"], ["💰", "Cost"], ["🏭", "Gray-market misuse"]]'>
 </mini-poll>
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Glossary</span>
-  <h2>Speak <span class="hl">desire-drug</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Glossary</span>
+  <h2>Understanding <span class="hl">PT-141</span> Terminology</h2>
+  <p class="lede">Twelve terms, each with the science and a plain-English translation. Tap any term to expand it.</p>
   <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fb718522"/><circle cx="24" cy="24" r="13" fill="none" stroke="#fb7185" stroke-width="2.5"/><circle cx="24" cy="24" r="4.5" fill="#fb7185"/></svg><span class="term">HSDD</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Hypoactive sexual desire disorder: persistently low sexual desire causing personal distress, not explained by another medical condition, drug, or relationship problem.</p>
-      <p class="gex"><span class="gslabel">Example</span>The condition Vyleesi is approved to treat.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Low desire that bothers you — and isn’t caused by something else.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fb718522"/><circle cx="24" cy="24" r="13" fill="none" stroke="#fb71b9" stroke-width="2.5"/><circle cx="24" cy="24" r="4.5" fill="#fb71b9"/></svg><span class="term">HSDD</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Hypoactive sexual desire disorder (HSDD) is defined as a persistent or recurrent deficiency of sexual desire that causes marked personal distress. The diagnosis requires that the low desire is not better explained by another medical condition, a drug or substance, or relationship problems. It is the specific indication for which bremelanotide (Vyleesi) received FDA approval in 2019 — for acquired, generalized HSDD in premenopausal women. The "distress" criterion matters: low desire alone, without distress, is not the disorder.</p>
+      <div class="plain"><span class="plabel">Plain English</span>HSDD stands for hypoactive sexual desire disorder — persistently low sex drive that genuinely bothers you. The diagnosis has rules: it can't be chalked up to another illness, a medication, or relationship trouble. And the distress part is essential — low desire that doesn't bother you isn't the disorder. This is the exact condition Vyleesi was approved to treat.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M6 30c5-12 9-16 12-16s7 8 12 8 7-4 12-8" fill="none" stroke="#be123c" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Bremelanotide</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A synthetic cyclic heptapeptide and melanocortin receptor agonist. Generic name for PT-141; sold as Vyleesi.</p>
-      <p class="gex"><span class="gslabel">Example</span>The molecule this page is about.</p>
-      <div class="plain"><span class="plabel">Plain English</span>PT-141’s grown-up name — the prescription version.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M6 30c5-12 9-16 12-16s7 8 12 8 7-4 12-8" fill="none" stroke="#125fbe" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Bremelanotide</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Bremelanotide is a synthetic cyclic heptapeptide — a ring-shaped chain of seven amino acids — that activates melanocortin receptors, particularly MC4R. It was derived from melanotan-II research and developed by Palatin Technologies. As the generic name for PT-141, it is the same molecule sold as the prescription product Vyleesi. Its mechanism is central: it acts on brain pathways involved in sexual motivation, not on blood flow like erectile-dysfunction drugs.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Bremelanotide is PT-141's official name — a lab-made, ring-shaped peptide of seven amino acids that switches on melanocortin receptors in the brain. It grew out of tanning-peptide research and was developed into a real prescription drug. Unlike Viagra-style drugs, it doesn't work on blood flow — it works on the brain's motivation circuits. Same molecule as the gray-market "PT-141," very different packaging and oversight.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#50072422"/><path d="M8 24h28M28 14l10 10-10 10" fill="none" stroke="#500724" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Melanocortin</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A family of receptors (MC1R–MC5R) responding to melanocyte-stimulating hormones. They govern pigmentation, appetite, and — via MC3R/MC4R — aspects of sexual function.</p>
-      <p class="gex"><span class="gslabel">Example</span>The receptor family PT-141 targets.</p>
-      <div class="plain"><span class="plabel">Plain English</span>One receptor family, many jobs: skin color, hunger, and desire.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#50072422"/><path d="M8 24h28M28 14l10 10-10 10" fill="none" stroke="#50072d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Melanocortin</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Melanocortins are a family of peptide hormones derived from the POMC prohormone, including alpha-MSH and ACTH. They act through five receptors, MC1R through MC5R, which govern pigmentation, appetite, energy balance, inflammation, and — via MC3R and MC4R in the brain — aspects of sexual function. Bremelanotide is a non-selective melanocortin agonist, meaning it activates several of these receptors at once. That breadth explains both its effects and its side effects: one receptor family, many jobs.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Melanocortins are a family of natural hormones — the same family behind skin pigment and appetite — that talk to five different receptors around the body. Those receptors handle tanning, hunger, energy use, and, through two brain receptors, parts of sexual desire. Bremelanotide flips several of these switches at once, not just one. That's why it can do more than one thing — and why the side effects come along too.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fb718522"/><path d="M24 6l14 6v10c0 9-6 15-14 18-8-3-14-9-14-18V12z" fill="none" stroke="#fb7185" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">MC4R</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Melanocortin-4 receptor: a brain receptor central to appetite control and, evidence suggests, sexual motivation pathways.</p>
-      <p class="gex"><span class="gslabel">Example</span>PT-141’s headline target.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The brain switch most linked to both hunger and wanting.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fb718522"/><path d="M24 6l14 6v10c0 9-6 15-14 18-8-3-14-9-14-18V12z" fill="none" stroke="#fb71b9" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">MC4R</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>MC4R, the melanocortin-4 receptor, is a brain receptor best known as a master regulator of appetite and energy balance — mutations in it are the most common genetic cause of severe obesity. Research also implicates it in sexual motivation pathways, and it is considered bremelanotide's key target for the desire effect. Because one receptor governs both hunger and aspects of libido, MC4R sits at the crossroads of appetite and desire. Its centrality is also why MC4R drugs are watched closely for metabolic side effects.</p>
+      <div class="plain"><span class="plabel">Plain English</span>MC4R is a brain receptor famous for running appetite — broken versions of it are the most common genetic cause of severe obesity. Evidence also ties it to the brain's sexual-motivation wiring, which is why bremelanotide's desire effect is credited to this receptor. One switch, two appetites: hunger and wanting. That double life is exactly why drugs hitting it get watched carefully.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M24 6c8 10 12 16 12 22a12 12 0 0 1-24 0c0-6 4-12 12-22z" fill="none" stroke="#be123c" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Vyleesi</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Brand name of bremelanotide, approved 2019 for acquired, generalized HSDD in premenopausal women. An as-needed auto-injector.</p>
-      <p class="gex"><span class="gslabel">Example</span>PT-141 at the pharmacy.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The prescription, brand-name version of PT-141.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M24 6c8 10 12 16 12 22a12 12 0 0 1-24 0c0-6 4-12 12-22z" fill="none" stroke="#125fbe" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Vyleesi</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Vyleesi is the brand name of bremelanotide, approved by the FDA in June 2019 for acquired, generalized HSDD in premenopausal women. It is supplied as a single-use auto-injector, taken as needed before anticipated sexual activity — not as a daily drug. Its approval was based on the RECONNECT trials, which showed modest but statistically significant improvements over placebo. Common side effects include nausea, flushing, and headache, and the label warns about blood pressure increases.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Vyleesi is the prescription, brand-name version of PT-141 — approved in 2019 for low desire in premenopausal women. It comes as a single-use auto-injector you use as needed before sex — not a daily pill. The trials behind it showed real but modest gains over placebo. The fine print: nausea is common, and it can raise blood pressure, which is why it has label warnings.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#50072422"/><path d="M6 24h8l4-10 6 20 4-10h14" fill="none" stroke="#500724" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Flibanserin</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A daily pill (brand Addyi) for HSDD that modulates serotonin and dopamine. The first drug approved for the condition (2015).</p>
-      <p class="gex"><span class="gslabel">Example</span>PT-141’s rival in chapter 5.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The daily-pill alternative — slower, sleepier, no alcohol.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#50072422"/><path d="M6 24h8l4-10 6 20 4-10h14" fill="none" stroke="#50072d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Flibanserin</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Flibanserin, sold as Addyi, is a daily oral pill approved in 2015 as the first drug for HSDD in premenopausal women. It works on brain chemistry — modulating serotonin and dopamine signaling — a completely different mechanism from bremelanotide's melanocortin route. Its effect size is modest, and it carries strict warnings, including no alcohol use because of fainting and low blood pressure risks. Together, flibanserin and bremelanotide are the only two FDA-approved drugs for HSDD.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Flibanserin — brand name Addyi — was the first-ever HSDD drug, approved in 2015 as a daily pill. It works on brain chemicals like serotonin and dopamine, a totally different route from bremelanotide's melanocortin path. The catch: modest benefits, and you absolutely can't drink alcohol on it — the combo can cause fainting and dangerous blood-pressure drops. It's the daily-pill alternative to Vyleesi's as-needed injector.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fb718522"/><path d="M18 6h12M20 6v12l-8 16h24l-8-16V6" fill="none" stroke="#fb7185" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">FSFI</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Female Sexual Function Index: a validated questionnaire measuring desire, arousal, and satisfaction. Used as a trial endpoint.</p>
-      <p class="gex"><span class="gslabel">Example</span>How the RECONNECT trials measured “desire”.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The standardized quiz that turns feelings into trial data.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fb718522"/><path d="M18 6h12M20 6v12l-8 16h24l-8-16V6" fill="none" stroke="#fb71b9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">FSFI</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The Female Sexual Function Index (FSFI) is a validated 19-item questionnaire that measures female sexual function across desire, arousal, lubrication, orgasm, satisfaction, and pain. It is the standard patient-reported outcome in sexual-medicine trials, including the RECONNECT studies for bremelanotide. Because desire cannot be measured with a blood test, regulators rely on instruments like this to turn subjective experience into trial data. Its desire-domain score was a co-primary endpoint in the Vyleesi trials.</p>
+      <div class="plain"><span class="plabel">Plain English</span>The FSFI is a standardized 19-question survey that measures female sexual function — desire, arousal, satisfaction, and more. You can't draw blood to measure desire, so trials use this quiz to turn feelings into data. It was one of the two main yardsticks in the Vyleesi trials. Think of it as the official scoreboard for "did the drug actually change anything." </div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M10 8h12a6 6 0 0 1 6 6v22a6 6 0 0 0-6-6H10zM10 8v28" fill="none" stroke="#be123c" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Distress score</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A scale measuring how much low desire bothers someone (e.g., FSDS-DAO). Regulators weigh it alongside desire itself.</p>
-      <p class="gex"><span class="gslabel">Example</span>The co-primary endpoint Vyleesi had to move.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Not just “how much do you want it” but “how much does it upset you”.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M10 8h12a6 6 0 0 1 6 6v22a6 6 0 0 0-6-6H10zM10 8v28" fill="none" stroke="#125fbe" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Distress score</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A distress score quantifies how much low sexual desire bothers a person — because HSDD is defined by distress, not just low desire. The RECONNECT trials used the Female Sexual Distress Scale-Desire/Arousal (FSDS-DAO), a validated questionnaire, as a co-primary endpoint alongside the FSFI desire domain. Regulators required improvement on both: more desire and less distress. This dual requirement is why the bar for approval was higher than just "increased libido." </p>
+      <div class="plain"><span class="plabel">Plain English</span>A distress score measures the other half of the diagnosis: not "how much do you want it," but "how much does it upset you." The Vyleesi trials used a validated distress questionnaire as one of their two main endpoints. Regulators demanded both — more desire AND less distress — before approving the drug. That's a higher bar than just "increased libido," and it matters for what the approval actually means.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#50072422"/><path d="M24 8l4.5 9.5 10.5 1.5-7.5 7.5 1.8 10.5-9.3-5-9.3 5 1.8-10.5-7.5-7.5 10.5-1.5z" fill="none" stroke="#500724" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Off-label</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Using an approved drug outside its labeled indication — e.g., men using bremelanotide for libido. Legal to prescribe, but unstudied for that use.</p>
-      <p class="gex"><span class="gslabel">Example</span>The gray zone much forum chatter lives in.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Using the drug for a job it was never tested for.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#50072422"/><path d="M24 8l4.5 9.5 10.5 1.5-7.5 7.5 1.8 10.5-9.3-5-9.3 5 1.8-10.5-7.5-7.5 10.5-1.5z" fill="none" stroke="#50072d" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Off-label</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Off-label use means prescribing an approved drug for a condition or population outside its official label — for example, men using bremelanotide for libido, since Vyleesi is approved only for premenopausal women. It is legal for doctors to prescribe off-label, and common in medicine, but the drug was never studied for that use. Efficacy and safety for the off-label purpose are unestablished, and insurance typically will not cover it.</p>
+      <div class="plain"><span class="plabel">Plain English</span>Off-label means using an approved drug for a job it was never tested for — like men using bremelanotide for libido when it's approved only for premenopausal women. Doctors are allowed to do this, and it happens all the time in medicine. But "allowed" isn't "proven": the benefit and the risks for that use are all unstudied. And don't expect insurance to pay for it.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fb718522"/><circle cx="16" cy="24" r="7" fill="none" stroke="#fb7185" stroke-width="2.5"/><circle cx="32" cy="24" r="7" fill="none" stroke="#fb7185" stroke-width="2.5"/></svg><span class="term">Auto-injector</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A prefilled device that delivers a set dose under the skin at the press of a button. Designed for self-administration.</p>
-      <p class="gex"><span class="gslabel">Example</span>How Vyleesi is supplied.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The click-pen that does the injecting for you.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fb718522"/><circle cx="16" cy="24" r="7" fill="none" stroke="#fb71b9" stroke-width="2.5"/><circle cx="32" cy="24" r="7" fill="none" stroke="#fb71b9" stroke-width="2.5"/></svg><span class="term">Auto-injector</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>An auto-injector is a prefilled, single-use device that delivers a fixed dose under the skin at the press of a button, designed for self-administration. Vyleesi is supplied this way: one injector, one preset dose, no measuring or mixing. The design reduces dosing errors compared with vials and syringes, but it does not eliminate the drug's side effects or risks. It is a delivery device, not a safety upgrade.</p>
+      <div class="plain"><span class="plabel">Plain English</span>An auto-injector is the click-pen of the drug world: prefilled, single-use, one button, one fixed dose under the skin. Vyleesi comes this way — no vials, no measuring, no mixing. That cuts down on dosing mistakes, which is the point. But don't confuse convenient delivery with a safer drug: the nausea, flushing, and blood-pressure effects are all still in the box.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M6 24c4-8 10-12 18-12s14 4 18 12c-4 8-10 12-18 12S10 32 6 24z" fill="none" stroke="#be123c" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#be123c"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>An inactive control in trials. In HSDD trials the placebo response is famously large — desire is expectation-sensitive.</p>
-      <p class="gex"><span class="gslabel">Example</span>What bremelanotide had to beat (and did, modestly).</p>
-      <div class="plain"><span class="plabel">Plain English</span>The dummy treatment that still helps some people — a lot, here.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be123c22"/><path d="M6 24c4-8 10-12 18-12s14 4 18 12c-4 8-10 12-18 12S10 32 6 24z" fill="none" stroke="#125fbe" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#125fbe"/></svg><span class="term">Placebo</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A placebo is an inactive control treatment used in clinical trials, and the placebo response is the improvement seen in people who received it. In HSDD trials the placebo response is famously large — desire and distress are highly expectation-sensitive, so dummy treatments produce real gains. Bremelanotide beat placebo in the RECONNECT trials, but modestly: the gap between drug and dummy was real yet small. That context is essential for reading the results honestly.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A placebo is the dummy treatment in a trial — and in HSDD studies, the dummy works surprisingly well. Desire and distress run on expectation, so people on placebo genuinely improve. Bremelanotide did beat placebo in its trials — but modestly. The drug-minus-dummy gap was real, just small. Keep that in perspective: "better than placebo" here means a little better, not a lot.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#50072422"/><path d="M24 6v34M14 40h20M10 14h28M16 14l-6 14h12zM32 14l-6 14h12z" fill="none" stroke="#500724" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Contraindication</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A specific situation where a drug must not be used because risk outweighs benefit — e.g., uncontrolled hypertension for bremelanotide.</p>
-      <p class="gex"><span class="gslabel">Example</span>Why some people can’t be prescribed it.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The label’s hard “do not use if…” list.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#50072422"/><path d="M24 6v34M14 40h20M10 14h28M16 14l-6 14h12zM32 14l-6 14h12z" fill="none" stroke="#50072d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Contraindication</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A contraindication is a specific situation in which a drug must not be used because the risk outweighs any benefit. For bremelanotide, uncontrolled hypertension and known cardiovascular disease are contraindications, because the drug can raise blood pressure. The label also sets strict limits on how often it may be used. These are not suggestions — they are the hard limits the approval was granted under.</p>
+      <div class="plain"><span class="plabel">Plain English</span>A contraindication is the label's hard "do not use if…" list — situations where the risks clearly win. For bremelanotide, that includes uncontrolled high blood pressure and heart disease, because the drug can push blood pressure up. The label also caps how often it can be used. These aren't gentle guidelines — they're the conditions the approval was built on.</div>
     </div></div>
   </div>
 </section>
-<section class="chapter" id="ch9">
-  <span class="eyebrow"><span class="n">09</span>Takeaways</span>
+<mini-poll slug="pt141-mini-ch8"
+  data-question="Which glossary term was newest to you?"
+  data-answers='[["🧬", "HSDD"], ["🎯", "Melanocortin receptors"], ["💊", "Bremelanotide"], ["📖", "Knew them all"]]'>
+</mini-poll>
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Nine chapters, distilled. What the molecule is, what the trials showed, and what would have to change.</p>
+  <p class="lede">Eleven chapters, distilled. What the molecule is, what the trials showed, and what would have to change.</p>
   <div class="take-grid">
 <div class="take reveal"><div class="tk">🧠</div><h4>A brain drug, not a hormone</h4><p>Bremelanotide acts on <strong>melanocortin receptors</strong> in desire circuits — no estrogen, no testosterone, no blood-flow plumbing.</p></div>
 <div class="take reveal"><div class="tk">🎨</div><h4>Born from a tanning accident</h4><p>Unexpected erections in <strong>melanotan tanning trials</strong> launched a 20-year detour to an approved desire drug.</p></div>
@@ -838,7 +1148,7 @@ mini-poll { display: block; }
     </ul>
   </div>
 </section>
-<mini-poll slug="pt141-mini-ch8"
+<mini-poll slug="pt141-mini-ch9"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "⭐⭐⭐⭐⭐ · Loved it"], ["🙂", "⭐⭐⭐⭐ · Good stuff"], ["😐", "⭐⭐⭐ · It’s okay"]]'>
 </mini-poll>
@@ -882,7 +1192,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#fb7185","#be123c","#500724","#fb7185","#be123c","#fb7185"];
+  var colors=["#fb71b9","#125fbe","#50072d","#fb71b9","#125fbe","#fb71b9"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -919,6 +1229,7 @@ var io=new IntersectionObserver(function(es){
   es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});
 },{threshold:0.12,rootMargin:"0px 0px -6% 0px"});
 document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+if(reduced){document.querySelectorAll("svg").forEach(function(s){try{if(s.pauseAnimations)s.pauseAnimations();}catch(e){}});}
 /* ---------- count-up stats ---------- */
 var cio=new IntersectionObserver(function(es){
   es.forEach(function(e){
@@ -966,7 +1277,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -1009,7 +1320,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#fb7185","#fb7185","#be123c","#fbbf24","#edf0f9"],parts=[];
+  var cols=["#fb71b9","#fb71b9","#125fbe","#f92694","#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -1045,12 +1356,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#fb7185", "#be123c", "#500724", "#9c0e33", "#f11644", "#b8294a", "#fc94a4", "#1f030e", "#be123c"] };
+  accents: ["#fb71b9", "#125fbe", "#50072d", "#0e4e9c", "#1678f1", "#2969b8", "#fc94ca", "#1f0312", "#125fbe"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="reta-mini-ch1"
+     <mini-poll slug="pt141-mini-recap"
        data-question="Had you heard of this topic before today?"
        data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
      </mini-poll>
@@ -1129,8 +1440,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fb7185', '#fb7185', '#be123c', '#a78bfa', '#fb7185',
-                 '#fb7185', '#fbbf24', '#fb7185', '#22d3ee'];
+                ['#fb71b9', '#fb71b9', '#125fbe', '#a78bfa', '#fb71b9',
+                 '#fb71b9', '#f92694', '#fb71b9', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
